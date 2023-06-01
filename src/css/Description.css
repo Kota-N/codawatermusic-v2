@@ -1,0 +1,82 @@
+.description {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 750px;
+}
+
+.about-track {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.about-track .track-title {
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--dark);
+    padding: 0.2rem 0.4rem;
+}
+
+.about-track h3 {
+    display: inline-block;
+    width: max-content;
+    margin-bottom: 1.4rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.about-track p {
+    padding-top: 2rem;
+}
+
+.tags {
+    margin-top: 2rem;
+}
+
+.tags h4 {
+    text-align: center;
+}
+
+.tag-name {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+
+.about-track a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.2s;
+    background-color: var(--dark);
+    padding: 0.4rem 0.8rem;
+    border-radius: 3px;
+}
+
+.about-track a:hover {
+    color: var(--accent);
+    opacity: 0.8;
+}
+
+.tags a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.2s;
+    background-color: var(--dark);
+    padding: 0.3rem 0.6rem;
+    border-radius: 3px;
+    margin: 0 0.2rem 0.5rem;
+}
+
+.tags a:hover {
+    color: var(--accent);
+    opacity: 0.8;
+}

@@ -1,0 +1,116 @@
+.vinyl-player {
+    position: absolute;
+    top: 105px;
+    right: -18px;
+    transform: scale(0.8);
+}
+
+.vinyl {
+    position: absolute;
+    top: 3rem;
+    right: 8rem;
+    width: 1px;
+    height: 1px;
+    transition: all 0.4s ease-out;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.fa-compact-disc {
+    animation: rotate 4s linear infinite;
+    animation-play-state: paused;
+    font-size: 5rem;
+    transition: all 0.3s;
+    margin: 1.6rem;
+    color: #7e7e7e;
+    border-radius: 36px;
+    padding: 3px;
+}
+
+.card:hover .fa-compact-disc {
+    opacity: 0.8;
+}
+
+.playing .fa-compact-disc {
+    animation-play-state: running;
+    color: var(--accent);
+    box-shadow: 0 0 5px 7px rgba(255, 255, 255, 0.8);
+}
+
+.playing .needle {
+    top: 43px;
+    right: 5px;
+    height: 4px;
+    width: 40px;
+    transform: rotate(-90deg);
+    animation: needle 10s ease infinite;
+    border-radius: 0;
+}
+
+.playing .needle2 {
+    top: 71px;
+    right: 21px;
+    transform: rotate(-46deg);
+    width: 20%;
+    height: 4px;
+    animation: needle 10s ease infinite;
+    border-radius: 0;
+}
+
+.playing .ball {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: 17px;
+    top: 13px;
+    animation: needle 10s ease infinite;
+}
+
+.playing .rectangle {
+    width: 16px;
+    height: 10px;
+    animation: needle 10s ease infinite;
+    top: 80px;
+    right: 37px;
+    transform: rotate(-46deg);
+    border-radius: 2px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes needle {
+    0% {
+        background-color: #2b1226;
+        opacity: 1;
+    }
+
+    25% {
+        background-color: #751e67;
+        opacity: 1;
+    }
+
+    50% {
+        background-color: #2b1226;
+        opacity: 1;
+    }
+
+    75% {
+        background-color: #751e67;
+        opacity: 1;
+    }
+
+    100% {
+        background-color: #2b1226;
+        opacity: 1;
+    }
+}

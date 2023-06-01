@@ -1,0 +1,39 @@
+.music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.next-page {
+    color: var(--accent);
+    margin-left: 1rem;
+    text-decoration: underline;
+}
+
+.prev-page {
+    color: var(--accent);
+    margin-right: 1rem;
+    text-decoration: underline;
+}
+
+.search-keyword {
+    color: var(--accent);
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}

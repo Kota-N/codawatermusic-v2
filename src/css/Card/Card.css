@@ -1,0 +1,117 @@
+.card {
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin: 28px 20px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.4s;
+    max-width: 180px;
+    min-width: 180px;
+    min-height: 220px;
+    max-height: 220px;
+    position: relative;
+    transform: translateZ(0);
+    background-color: var(--light);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.playing {
+    transform: scale(1.05);
+    cursor: default;
+}
+
+.img-container {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 3px;
+    /* border-top-left-radius: 3px;
+    border-top-right-radius: 3px; */
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.card:hover .img-container {
+    transform: scale(1.05);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.playing .img-container {
+    transform: scale(1.07);
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.card-genre {
+    color: var(--white);
+    font-weight: 1000;
+    text-shadow: 0 0 2px black;
+    z-index: 1;
+    position: absolute;
+    letter-spacing: normal;
+}
+
+.card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+}
+
+.card-title {
+    position: absolute;
+    top: 107px;
+    left: 0;
+    width: 100%;
+    padding: 0 5px;
+    font-size: 0.9rem;
+    z-index: 2;
+    height: 24px;
+    text-align: center;
+    letter-spacing: normal;
+}
+
+.card-title h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.card-title a {
+    color: var(--dark);
+    text-decoration: none;
+    transition: all 0.2s;
+    transform: translateZ(0);
+}
+
+.card-title a:hover {
+    color: var(--accent);
+    font-size: 0.94rem;
+}
+
+.fa-download {
+    position: absolute;
+    bottom: 30px;
+    font-size: 32px;
+    left: 23px;
+    color: #7e7e7e;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.fa-download:hover {
+    color: var(--accent);
+    transform: scale(1.05);
+}

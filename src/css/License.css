@@ -1,0 +1,38 @@
+.license {
+    margin: 3rem;
+}
+
+.license h3 {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 0.4rem 0.8rem;
+    color: var(--accent);
+}
+
+.license ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.license ul a {
+    text-decoration: underline;
+    color: var(--dark);
+    transition: all 0.2s;
+}
+
+.license ul a:hover {
+    color: var(--accent);
+}
+
+.license ul span {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+hr {
+    width: 14%;
+    margin: 5rem auto;
+    border: none;
+    border-top: 10px dotted var(--dark);
+}
